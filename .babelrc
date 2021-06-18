@@ -1,0 +1,16 @@
+ {
+  "presets": [
+    [
+      "@bebel/preset-env",
+      {
+        "targets": {
+          "edge": "17",
+          "chrome": "67"
+        },
+        "corejs": 2, // 不推荐使用polyfill
+        "useBuiltIns": "usage" // entry usage false
+      }
+    ],
+    "@babel/preset-react"
+  ]
+}
